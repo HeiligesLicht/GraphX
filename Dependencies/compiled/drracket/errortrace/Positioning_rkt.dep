@@ -1,0 +1,1 @@
+("6.8" ("d3f51bc17c6a18840f06d4e7ab214dd681b6e4ce" . "6e008e5c7ee14f40f3b9074632863ba14e233940") #"C:\\Users\\DemonFtIllusion\\Desktop\\GraphX\\Dependencies\\Vector2D.rkt" #"C:\\Users\\DemonFtIllusion\\Desktop\\GraphX\\Dependencies\\Vector3D.rkt" (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))
