@@ -7,7 +7,7 @@ This project was part of a Computer-Science course (Université de Nice Sophia-A
 
 _____
 
-GraphX uses [pict3d](https://github.com/ntoronto/pict3d); a 3D engine and rendering library written in TypedRacket.
+GraphX uses [pict3d](https://github.com/ntoronto/pict3d); a 3D engine and rendering library written by @ntoronto.
 To install:
 
 `raco pkg install pict3d`
@@ -21,4 +21,8 @@ _____
 
 Preview:
 
-![A preview for a few features of the project](https://i.imgur.com/aay0WYq.gif)
+2D Showcase:
+![A preview for a few 2D features of the project](https://i.imgur.com/aay0WYq.gif)
+
+3D Showcase:
+![A preview for a few 3D features of the project](https://i.imgur.com/mjzprJW.gif)
