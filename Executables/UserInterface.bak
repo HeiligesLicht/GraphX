@@ -1,8 +1,8 @@
 #lang racket/gui
-
+(require pict3d)
 
 ;; Imports
-(require pict3d)
+
 (require "../Dependencies/Graph.rkt")
 (require "../Dependencies/Positioning.rkt")
 (require "../Dependencies/Vector2D.rkt")
@@ -50,13 +50,12 @@
 
 (define (Draw-Canvas-2D dc)
   ; A sad attempt on making a O(n²) algorithm run a little faster.
-  (let ([parallel-relax (future (lambda () (Relaxator 'relax Graph GraphPositioning IgnoreNodes)))])
+  (let ([parallel-relax (future (lambda () (Relaxator 'relax-3D Graph GraphPositioning IgnoreNodes)))])
     (Draw-Graph Graph GraphPositioning IgnoreNodes dc BITMAP-DC)
     (when (not Timer-Stopped?)
-      (touch parallel-relax)
-      (printf "hi")
       (when (not (zero? (hash-count BlackHolePositioning)))
         (Calculate-Gravitation))
+      (touch parallel-relax)
       (when (and (not (Relaxator 'final-state?)) (< (length PreviousPositionings) 1000))
         (set! PreviousPositionings (cons (cons (hash-copy Graph) (hash-copy GraphPositioning)) PreviousPositionings))))))
 
