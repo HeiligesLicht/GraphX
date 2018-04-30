@@ -19,7 +19,7 @@ To launch the project, open the `UserInterface.rkt` file under `Executables` and
 
 _____
 
-Preview:
+###### Preview:
 
 2D Showcase:
 ![A preview for a few 2D features of the project](https://i.imgur.com/aay0WYq.gif)
