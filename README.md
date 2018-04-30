@@ -1,6 +1,6 @@
 # GraphX
 ### A graph visualisation tool written in Racket.
-## Authors: Mohamed-Amine ROMDHANE (@HeiligesLicht), Noé ZHANG (@Zokaii)
+##### Authors: Mohamed-Amine ROMDHANE (@HeiligesLicht), Noé ZHANG (@Zokaii)
 ______
 
 This project was part of a Computer-Science course (Université de Nice Sophia-Antipolis) for advanced functional programming in Racket/Scheme.
