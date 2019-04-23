@@ -54,7 +54,6 @@
     (Draw-Graph Graph GraphPositioning IgnoreNodes dc BITMAP-DC)
     (when (not Timer-Stopped?)
       (touch parallel-relax)
-      (printf "hi")
       (when (not (zero? (hash-count BlackHolePositioning)))
         (Calculate-Gravitation))
       (when (and (not (Relaxator 'final-state?)) (< (length PreviousPositionings) 1000))
